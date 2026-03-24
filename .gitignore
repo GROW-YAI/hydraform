@@ -28,6 +28,7 @@ dist-ssr
 .env.local
 .env.production
 .env*.local
+.env.example
 
 # Next.js build output
 .next/
