@@ -27,55 +27,11 @@ import testimonialImage2 from '../../assets/images/dianeHampton.jpg';
 import testimonialImage3 from '../../assets/images/henryAkwaboah.jpg';
 
 const LandingPage = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
   return (
     <>
-      <header>
-        {/* Main navbar */}
-        <div className="relative bg-cover bg-center h-dvh" style={{ backgroundImage: `url(${backgroundImage})` }}>
-          <div className="bg-white w-full opacity-90 fixed left-0 top-0">
-            <div className="container mx-auto flex justify-between items-center py-4 px-4">
-              <div className="flex items-center space-x-2">
-                <img src={logo} alt="Logo" className="h-20" />
-              </div>
-              <nav className="hidden md:flex ml-auto space-x-6">
-                <a href="#home" className="text-red-700 font-semibold hover:text-yellow-600">HOME</a>
-                <a href="#services" className="text-sky-950 font-semibold hover:text-red-700">SERVICES</a>
-                <a href="#about" className="text-sky-950 font-semibold hover:text-red-700">ABOUT US</a>
-                <a href="#blog" className="text-sky-950 font-semibold hover:text-red-700">BLOG</a>
-                <a href="#contact" className="text-sky-950 font-semibold hover:text-red-700">CONTACT</a>
-                <a href="#testimonials" className="text-sky-950 font-semibold hover:text-red-700">TESTIMONIALS</a>
-              </nav>
-              <div className="md:hidden">
-                <button onClick={toggleMobileMenu}>
-                  {isMobileMenuOpen ? <X className="h-6 w-6 text-sky-950" /> : <Menu className="h-6 w-6 text-sky-950" />}
-                </button>
-              </div>
-            </div>
-            {isMobileMenuOpen && (
-              <div className="md:hidden bg-white opacity-90 fixed left-0 top-0 w-full">
-                <nav className="flex flex-col items-center space-y-4 py-4">
-                  <a href="#home" className="text-red-700 font-semibold hover:text-yellow-600">HOME</a>
-                  <a href="#services" className="text-sky-950 font-semibold hover:text-red-700">SERVICES</a>
-                  <a href="#about" className="text-sky-950 font-semibold hover:text-red-700">ABOUT US</a>
-                  <a href="#blog" className="text-sky-950 font-semibold hover:text-red-700">BLOG</a>
-                  <a href="#contact" className="text-sky-950 font-semibold hover:text-red-700">CONTACT</a>
-                  <a href="#testimonials" className="text-sky-950 font-semibold hover:text-red-700">TESTIMONIALS</a>
-                </nav>
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
-
-
       {/* Who We Are Section/Video */}
-      <section id="home" className="py-20">
+
+      <section id="home" className="py-20 text-left">
       <motion.div 
     className="container mx-auto px-4 flex flex-wrap items-center"
     initial="hidden"
@@ -106,7 +62,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
 </section>
 
       {/* Services Section */}
-      <section id="services" className="py-10 bg-gray-100">
+      <section id="services" className="py-10 bg-gray-100 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
           <div className="flex flex-wrap -mx-4">
@@ -136,7 +92,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="py-10">
+      <section id="about" className="py-10 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">About Us</h2>
           <div className="flex flex-wrap items-center">
@@ -154,7 +110,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="py-10 bg-gray-100">
+      <section id="blog" className="py-10 bg-gray-100 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Blog</h2>
           <div className="flex flex-wrap -mx-4">
@@ -226,7 +182,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
       </section>
       
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-10">
+      <section id="testimonials" className="py-10 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Testimonials</h2>
           <div className="flex flex-wrap -mx-4">
@@ -271,7 +227,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
       </section>
 
   {/* Contact Us Section */}
-      <section id="contact" className="py-10 bg-gray-100">
+      <section id="contact" className="py-10 bg-gray-100 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Find Us</h2>
           <div className="flex flex-wrap -mx-4">
