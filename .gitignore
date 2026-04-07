@@ -32,3 +32,15 @@ dist-ssr
 
 # Next.js build output
 .next/
+
+# Build outputs
+build/
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+pnpm-lock.yaml.*
+
+# Test and todo files
+widget-test.html
+ToDo.md
