@@ -41,17 +41,21 @@ const LandingPage = () => {
   <div className="container mx-auto px-4 flex flex-wrap items-center">
     <div className="w-full md:w-1/2 mb-8 md:mb-0">
       <h2 className="text-3xl font-bold text-red-700 mb-4">WHO WE ARE?</h2>
-      <p className="text-gray-700 font-semibold">
-
-We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Technology, which involves incorporating seaweed ashes, cement and clay to manufacture bricks for construction.
-<br />
-<p className='font-bold text-red-700'>Motto</p>
-<h1>Seaweed Interlocking Bricks: Environmentally-Friendly Building Materials, Our Priority!</h1>
-<p className='font-bold text-red-700'>Mission</p>
-<h1>Our mission is to produce durable, affordable, and environmentally-friendly building materials for construction.</h1> 
-<p className='font-bold text-red-700'>Vision</p>
-<h1>Our vision is to provide affordable and durable real estate housing for individuals and retirees.</h1>
+      <p className="text-gray-700 font-semibold mb-4">
+        We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Technology, which involves incorporating seaweed ashes, cement and clay to manufacture bricks for construction.
       </p>
+      <div className="mb-6">
+        <p className="font-bold text-red-700 mb-2">Motto</p>
+        <p className="text-gray-700">Seaweed Interlocking Bricks: Environmentally-Friendly Building Materials, Our Priority!</p>
+      </div>
+      <div className="mb-6">
+        <p className="font-bold text-red-700 mb-2">Mission</p>
+        <p className="text-gray-700">Our mission is to produce durable, affordable, and environmentally-friendly building materials for construction.</p>
+      </div>
+      <div className="mb-6">
+        <p className="font-bold text-red-700 mb-2">Vision</p>
+        <p className="text-gray-700">Our vision is to provide affordable and durable real estate housing for individuals and retirees.</p>
+      </div>
     </div>
     <div className="md:w-1/2 flex justify-center md:pl-32">
       <video controls className="w-full h-auto max-w-full rounded-lg">
