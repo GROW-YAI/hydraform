@@ -104,10 +104,14 @@ const LandingPage = () => {
               <img src={aboutUsImage} alt="About Us" className="max-w-full h-auto rounded-lg shadow-lg" />
             </div>
             <div className="w-full md:w-1/2">
-              <p className="text-gray-700 font-semibold ml-4">
-                We are dedicated to providing the best service in the industry. Our team of experts is here to help you with any questions or concerns you may have. We believe in building strong relationships with our clients and providing top-notch customer service. <br />
-                Our wide range of products and services are delivered with a touch of professionalism and to your satisfaction; and our extraordinary team, always on standby, eager to deliver nothing short of the best to our valuable clientele.
-              </p>
+              <div className="ml-4 space-y-8">
+                <p className="text-gray-700 font-semibold leading-relaxed py-2">
+                  We are dedicated to providing the best service in the industry. Our team of experts is here to help you with any questions or concerns you may have. We believe in building strong relationships with our clients and providing top-notch customer service.
+                </p>
+                <p className="text-gray-700 font-semibold leading-relaxed py-2">
+                  Our wide range of products and services are delivered with a touch of professionalism and to your satisfaction; and our extraordinary team, always on standby, eager to deliver nothing short of the best to our valuable clientele.
+                </p>
+              </div>
             </div>
           </div>
         </div>
