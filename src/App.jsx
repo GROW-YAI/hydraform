@@ -12,11 +12,16 @@ import Contact from './pages/landing-page/components/contact';
 import Hero from './pages/landing-page/components/hero';
 import Services from './pages/landing-page/components/services';
 import Testimonials from './pages/landing-page/components/testimonials';
+import BoafoWidgetInitializer from './components/BoafoWidgetInitializer';
 
 
 
 function App() {
-  const router = createBrowserRouter([
+  return (
+    <>
+      <BoafoWidgetInitializer />
+      <ToastContainer />
+      <RouterProvider router={createBrowserRouter([
     {
       path: '/',
       element: <RootLayout />,
@@ -51,12 +56,7 @@ function App() {
         },
       ],
     },
-  ]);
-
-  return (
-    <>
-      <ToastContainer />
-      <RouterProvider router={router} />
+  ])} />
     </>
   );
 }

@@ -27,55 +27,11 @@ import testimonialImage2 from '../../assets/images/dianeHampton.jpg';
 import testimonialImage3 from '../../assets/images/henryAkwaboah.jpg';
 
 const LandingPage = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
   return (
     <>
-      <header>
-        {/* Main navbar */}
-        <div className="relative bg-cover bg-center h-dvh" style={{ backgroundImage: `url(${backgroundImage})` }}>
-          <div className="bg-white w-full opacity-90 fixed left-0 top-0">
-            <div className="container mx-auto flex justify-between items-center py-4 px-4">
-              <div className="flex items-center space-x-2">
-                <img src={logo} alt="Logo" className="h-20" />
-              </div>
-              <nav className="hidden md:flex ml-auto space-x-6">
-                <a href="#home" className="text-red-700 font-semibold hover:text-yellow-600">HOME</a>
-                <a href="#services" className="text-sky-950 font-semibold hover:text-red-700">SERVICES</a>
-                <a href="#about" className="text-sky-950 font-semibold hover:text-red-700">ABOUT US</a>
-                <a href="#blog" className="text-sky-950 font-semibold hover:text-red-700">BLOG</a>
-                <a href="#contact" className="text-sky-950 font-semibold hover:text-red-700">CONTACT</a>
-                <a href="#testimonials" className="text-sky-950 font-semibold hover:text-red-700">TESTIMONIALS</a>
-              </nav>
-              <div className="md:hidden">
-                <button onClick={toggleMobileMenu}>
-                  {isMobileMenuOpen ? <X className="h-6 w-6 text-sky-950" /> : <Menu className="h-6 w-6 text-sky-950" />}
-                </button>
-              </div>
-            </div>
-            {isMobileMenuOpen && (
-              <div className="md:hidden bg-white opacity-90 fixed left-0 top-0 w-full">
-                <nav className="flex flex-col items-center space-y-4 py-4">
-                  <a href="#home" className="text-red-700 font-semibold hover:text-yellow-600">HOME</a>
-                  <a href="#services" className="text-sky-950 font-semibold hover:text-red-700">SERVICES</a>
-                  <a href="#about" className="text-sky-950 font-semibold hover:text-red-700">ABOUT US</a>
-                  <a href="#blog" className="text-sky-950 font-semibold hover:text-red-700">BLOG</a>
-                  <a href="#contact" className="text-sky-950 font-semibold hover:text-red-700">CONTACT</a>
-                  <a href="#testimonials" className="text-sky-950 font-semibold hover:text-red-700">TESTIMONIALS</a>
-                </nav>
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
-
-
       {/* Who We Are Section/Video */}
-      <section id="home" className="py-20">
+
+      <section id="home" className="py-20 text-left">
       <motion.div 
     className="container mx-auto px-4 flex flex-wrap items-center"
     initial="hidden"
@@ -85,17 +41,21 @@ const LandingPage = () => {
   <div className="container mx-auto px-4 flex flex-wrap items-center">
     <div className="w-full md:w-1/2 mb-8 md:mb-0">
       <h2 className="text-3xl font-bold text-red-700 mb-4">WHO WE ARE?</h2>
-      <p className="text-gray-700 font-semibold">
-
-We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Technology, which involves incorporating seaweed ashes, cement and clay to manufacture bricks for construction.
-<br />
-<p className='font-bold text-red-700'>Motto</p>
-<h1>Seaweed Interlocking Bricks: Environmentally-Friendly Building Materials, Our Priority!</h1>
-<p className='font-bold text-red-700'>Mission</p>
-<h1>Our mission is to produce durable, affordable, and environmentally-friendly building materials for construction.</h1> 
-<p className='font-bold text-red-700'>Vision</p>
-<h1>Our vision is to provide affordable and durable real estate housing for individuals and retirees.</h1>
+      <p className="text-gray-700 font-semibold mb-4">
+        We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Technology, which involves incorporating seaweed ashes, cement and clay to manufacture bricks for construction.
       </p>
+      <div className="mb-6">
+        <p className="font-bold text-red-700 mb-2">Motto</p>
+        <p className="text-gray-700">Seaweed Interlocking Bricks: Environmentally-Friendly Building Materials, Our Priority!</p>
+      </div>
+      <div className="mb-6">
+        <p className="font-bold text-red-700 mb-2">Mission</p>
+        <p className="text-gray-700">Our mission is to produce durable, affordable, and environmentally-friendly building materials for construction.</p>
+      </div>
+      <div className="mb-6">
+        <p className="font-bold text-red-700 mb-2">Vision</p>
+        <p className="text-gray-700">Our vision is to provide affordable and durable real estate housing for individuals and retirees.</p>
+      </div>
     </div>
     <div className="md:w-1/2 flex justify-center md:pl-32">
       <video controls className="w-full h-auto max-w-full rounded-lg">
@@ -106,7 +66,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
 </section>
 
       {/* Services Section */}
-      <section id="services" className="py-10 bg-gray-100">
+      <section id="services" className="py-10 bg-gray-100 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
           <div className="flex flex-wrap -mx-4">
@@ -136,7 +96,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="py-10">
+      <section id="about" className="py-10 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">About Us</h2>
           <div className="flex flex-wrap items-center">
@@ -144,17 +104,21 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
               <img src={aboutUsImage} alt="About Us" className="max-w-full h-auto rounded-lg shadow-lg" />
             </div>
             <div className="w-full md:w-1/2">
-              <p className="text-gray-700 font-semibold ml-4">
-                We are dedicated to providing the best service in the industry. Our team of experts is here to help you with any questions or concerns you may have. We believe in building strong relationships with our clients and providing top-notch customer service. <br />
-                Our wide range of products and services are delivered with a touch of professionalism and to your satisfaction; and our extraordinary team, always on standby, eager to deliver nothing short of the best to our valuable clientele.
-              </p>
+              <div className="ml-4 space-y-8">
+                <p className="text-gray-700 font-semibold leading-relaxed py-2">
+                  We are dedicated to providing the best service in the industry. Our team of experts is here to help you with any questions or concerns you may have. We believe in building strong relationships with our clients and providing top-notch customer service.
+                </p>
+                <p className="text-gray-700 font-semibold leading-relaxed py-2">
+                  Our wide range of products and services are delivered with a touch of professionalism and to your satisfaction; and our extraordinary team, always on standby, eager to deliver nothing short of the best to our valuable clientele.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="py-10 bg-gray-100">
+      <section id="blog" className="py-10 bg-gray-100 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Blog</h2>
           <div className="flex flex-wrap -mx-4">
@@ -226,7 +190,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
       </section>
       
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-10">
+      <section id="testimonials" className="py-10 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Testimonials</h2>
           <div className="flex flex-wrap -mx-4">
@@ -271,7 +235,7 @@ We are Vincecole Ventures. We specialize in Hydraform Seaweed-Interlock Brick Te
       </section>
 
   {/* Contact Us Section */}
-      <section id="contact" className="py-10 bg-gray-100">
+      <section id="contact" className="py-10 bg-gray-100 text-left">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Find Us</h2>
           <div className="flex flex-wrap -mx-4">
